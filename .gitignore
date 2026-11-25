@@ -40,7 +40,7 @@
 **/audit/picks_log.jsonl
 **/audit/latest.json
 
-# --- public research copy: the audit, the reproducible analysis and the pick data ---
+# --- public research copy only (no effect in the private repo, which has none of these) ---
 !/AUDIT-*.md
 !/OPEN-QUESTIONS.md
 !/analysis/*.py
