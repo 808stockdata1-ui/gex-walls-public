@@ -1,0 +1,47 @@
+# allowlist: ignore everything, then re-include only source and docs
+*
+!*/
+!.gitignore
+!/README.md
+!/AGENTS.md
+!/ARENA.md
+!/arena/*.py
+!/arena/*.md
+!/gexwalls/*.py
+!/gexwalls/*.bat
+!/gexwalls/requirements.txt
+!/gexwalls/alerts_config.example.json
+!/gexwalls/lightweight-charts.standalone.production.js
+!/gexwalls/LIGHTWEIGHT-CHARTS-LICENSE.txt
+!/gexwalls/tests/**
+!/gexwalls/audit/audit.py
+!/gexwalls/audit/audit_prompt.md
+!/gexwalls/audit/review_*.md
+!/gexwalls/audit/research_seen.json
+!/strategyscanner/*.py
+!/strategyscanner/*.md
+!/strategyscanner/*.bat
+!/strategyscanner/*.ps1
+!/strategyscanner/requirements.txt
+!/strategyscanner/universe*.txt
+!/strategyscanner/config.example.json
+!/strategyscanner/scanner/*.py
+!/strategyscanner/tools/*.py
+!/strategyscanner/tests/**
+# never, even if re-included above
+**/__pycache__/**
+**/schwab_*.json
+**/alerts_config.json
+**/trades*.json
+**/config.json
+**/*.sqlite
+**/*.db
+**/audit/history.jsonl
+**/audit/picks_log.jsonl
+**/audit/latest.json
+
+# --- public research copy: the audit, the reproducible analysis and the pick data ---
+!/AUDIT-*.md
+!/OPEN-QUESTIONS.md
+!/analysis/*.py
+!/data/*.csv.gz

@@ -1,0 +1,161 @@
+{
+ "universe_file": "universe.txt",
+ "db_path": "data/scanner.db",
+ "cache_dir": "data/cache",
+ "reports_dir": "reports",
+ "output_dir": "output",
+ "logs_dir": "logs",
+ "sec_user_agent": "GEXWalls/1.0 (personal research; you@example.com)",
+ "workers": 8,
+ "risk_free_fallback": 0.04,
+ "min_price": 3.0,
+ "min_avg_volume": 300000,
+ "wheel_max_price": 55.0,
+ "max_width_abs": 10.0,
+ "max_width_pct": 0.05,
+ "slippage": 0.5,
+ "pop_bucket": 0.01,
+ "log_top_n": 5,
+ "report_top_n": 10,
+ "max_per_ticker_top": 2,
+ "exclude_earnings_timeframes": [
+  "daily",
+  "weekly",
+  "monthly"
+ ],
+ "timeframes": {
+  "daily": {
+   "min_dte": 0,
+   "max_dte": 4
+  },
+  "weekly": {
+   "min_dte": 5,
+   "max_dte": 20
+  },
+  "monthly": {
+   "min_dte": 21,
+   "max_dte": 60
+  },
+  "quarterly": {
+   "min_dte": 61,
+   "max_dte": 239
+  },
+  "leaps": {
+   "min_dte": 240,
+   "max_dte": 1200
+  }
+ },
+ "min_pop": {
+  "daily": 0.6,
+  "weekly": 0.6,
+  "monthly": 0.6,
+  "leaps": 0.3,
+  "quarterly": 0.6
+ },
+ "min_roc_annual": 0.2,
+ "min_roc": {
+  "PCS": {
+   "daily": 0.04,
+   "weekly": 0.06,
+   "monthly": 0.12,
+   "leaps": 0.3,
+   "quarterly": 0.2
+  },
+  "CCS": {
+   "daily": 0.04,
+   "weekly": 0.06,
+   "monthly": 0.12,
+   "leaps": 0.3,
+   "quarterly": 0.2
+  },
+  "IC": {
+   "daily": 0.06,
+   "weekly": 0.1,
+   "monthly": 0.2,
+   "leaps": 0.4,
+   "quarterly": 0.3
+  },
+  "CSP": {
+   "daily": 0.002,
+   "weekly": 0.004,
+   "monthly": 0.012,
+   "leaps": 0.06,
+   "quarterly": 0.03
+  },
+  "CC": {
+   "daily": 0.002,
+   "weekly": 0.004,
+   "monthly": 0.012,
+   "leaps": 0.06,
+   "quarterly": 0.03
+  },
+  "LCALL": {
+   "leaps": 0.0
+  }
+ },
+ "max_capital": {
+  "PCS": 2500,
+  "CCS": 2500,
+  "IC": 2500,
+  "CSP": 5500,
+  "CC": 5500,
+  "LCALL": 6000
+ },
+ "liquidity": {
+  "min_oi_short": 100,
+  "min_oi_long": 25,
+  "max_abs_spread": 0.1,
+  "max_rel_spread": 0.35
+ },
+ "strategy": {
+  "short_delta_min": 0.03,
+  "short_delta_max": 0.45,
+  "min_credit": 0.05,
+  "max_long_legs": 6,
+  "leaps_min_delta": 0.7,
+  "leaps_max_extrinsic_pct": 0.2
+ },
+ "learning": {
+  "min_train": 50,
+  "prior_n": 200
+ },
+ "telegram": {
+  "bot_token": "",
+  "chat_id": ""
+ },
+ "universe_auto_file": "universe_auto.txt",
+ "universe": {
+  "min_day_volume": 300000,
+  "min_etf_finra_volume": 150000,
+  "max_dte": 60,
+  "min_liquid_strikes": 8,
+  "min_total_oi": 2000,
+  "workers": 4
+ },
+ "cboe_rate": 1.0,
+ "refresh_trigger_id": "trig_01AzetAhHMSASPdUiGmiwDNf",
+ "min_profit": 0.2,
+ "min_premium_roc": 0.2,
+ "fast": {
+  "shortlist_size": 60,
+  "shortlist_profit_factor": 0.75,
+  "max_age_days": 4
+ },
+ "cboe_hosts": [
+  "cdn-api.cboe.com",
+  "cdn.cboe.com"
+ ],
+ "ev": {
+  "enabled": true,
+  "gate": false,
+  "min_ev_per_contract": 0.0,
+  "min_ev_on_risk": null,
+  "commission_per_contract": 0.65,
+  "charge_close": true,
+  "rv_stress": 1.35,
+  "min_iv_rv": 1.05,
+  "gate_log": true,
+  "iv_rv_band": 3.0,
+  "max_ev_on_risk": 0.5
+ }
+}

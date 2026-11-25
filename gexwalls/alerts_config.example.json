@@ -1,0 +1,274 @@
+{
+ "watchlist": [
+  {
+   "ticker": "GME",
+   "strike": null
+  },
+  {
+   "ticker": "SECZ",
+   "strike": null
+  },
+  {
+   "ticker": "XLF",
+   "strike": null
+  },
+  {
+   "ticker": "TSLA",
+   "strike": null
+  },
+  {
+   "ticker": "CRAK",
+   "strike": null
+  },
+  {
+   "ticker": "ONDS",
+   "strike": null
+  },
+  {
+   "ticker": "GDX",
+   "strike": null
+  },
+  {
+   "ticker": "BORR",
+   "strike": null
+  },
+  {
+   "ticker": "UNH",
+   "strike": null
+  },
+  {
+   "ticker": "SHLD",
+   "strike": null
+  },
+  {
+   "ticker": "CIBR",
+   "strike": null
+  },
+  {
+   "ticker": "WMT",
+   "strike": null
+  },
+  {
+   "ticker": "AMZN",
+   "strike": null
+  },
+  {
+   "ticker": "SPAI",
+   "strike": null
+  },
+  {
+   "ticker": "LPTH",
+   "strike": null
+  },
+  {
+   "ticker": "MO",
+   "strike": null
+  },
+  {
+   "ticker": "USO",
+   "strike": null
+  },
+  {
+   "ticker": "PG",
+   "strike": null
+  },
+  {
+   "ticker": "ALM",
+   "strike": null
+  },
+  {
+   "ticker": "TPC",
+   "strike": null
+  },
+  {
+   "ticker": "CENX",
+   "strike": null
+  },
+  {
+   "ticker": "NUE",
+   "strike": null
+  },
+  {
+   "ticker": "STLD",
+   "strike": null
+  },
+  {
+   "ticker": "DELL",
+   "strike": null
+  },
+  {
+   "ticker": "BE",
+   "strike": null
+  },
+  {
+   "ticker": "BMNR",
+   "strike": null
+  },
+  {
+   "ticker": "IBIT",
+   "strike": null
+  },
+  {
+   "ticker": "HOOD",
+   "strike": null
+  },
+  {
+   "ticker": "VST",
+   "strike": null
+  },
+  {
+   "ticker": "RKLB",
+   "strike": null
+  },
+  {
+   "ticker": "AAPL",
+   "strike": null
+  },
+  {
+   "ticker": "SLV",
+   "strike": null
+  },
+  {
+   "ticker": "AXON",
+   "strike": null
+  },
+  {
+   "ticker": "AGQ",
+   "strike": null
+  },
+  {
+   "ticker": "TLT",
+   "strike": null
+  },
+  {
+   "ticker": "ROST",
+   "strike": null
+  },
+  {
+   "ticker": "XLV",
+   "strike": null
+  },
+  {
+   "ticker": "CRBG",
+   "strike": null
+  },
+  {
+   "ticker": "NBIS",
+   "strike": null
+  },
+  {
+   "ticker": "SKHY",
+   "strike": null
+  },
+  {
+   "ticker": "AMD",
+   "strike": null
+  },
+  {
+   "ticker": "LLY",
+   "strike": null
+  },
+  {
+   "ticker": "UVXY",
+   "strike": null
+  },
+  {
+   "ticker": "COIN",
+   "strike": null
+  },
+  {
+   "ticker": "PURR",
+   "strike": null
+  },
+  {
+   "ticker": "UMAC",
+   "strike": null
+  },
+  {
+   "ticker": "COSW",
+   "strike": null
+  },
+  {
+   "ticker": "COST",
+   "strike": null
+  },
+  {
+   "ticker": "TAN",
+   "strike": null
+  },
+  {
+   "ticker": "UGL",
+   "strike": null
+  },
+  {
+   "ticker": "V",
+   "strike": null
+  },
+  {
+   "ticker": "HIMS",
+   "strike": null
+  },
+  {
+   "ticker": "DUOL",
+   "strike": null
+  },
+  {
+   "ticker": "PLTR",
+   "strike": null
+  },
+  {
+   "ticker": "CVS",
+   "strike": null
+  },
+  {
+   "ticker": "INTC",
+   "strike": null
+  },
+  {
+   "ticker": "MGM",
+   "strike": null
+  },
+  {
+   "ticker": "KMI",
+   "strike": null
+  },
+  {
+   "ticker": "NKTR",
+   "strike": null
+  },
+  {
+   "ticker": "AG",
+   "strike": null
+  }
+ ],
+ "interval_min": 15,
+ "near_pct": 2.0,
+ "gex_drop_pct": 50.0,
+ "strike_near_pct": 3.0,
+ "include_weekly": true,
+ "market_hours_only": true,
+ "toast": true,
+ "ntfy": true,
+ "ntfy_topic": "",
+ "puts_watchlist": [
+  "UMAC",
+  "SECZ",
+  "APLD",
+  "NBIG"
+ ],
+ "puts_max_price": 30.0,
+ "puts_etfs": true,
+ "puts_daily": true,
+ "puts_screener": true,
+ "blocks_on": true,
+ "block_tickers": [],
+ "block_min_usd": 100000.0,
+ "block_min_shares": 2000.0,
+ "block_alert_usd": 5000000.0,
+ "min_return_pct": 15.0,
+ "min_any_return_pct": 10.0,
+ "picks_min_return_pct": 20.0,
+ "star_firms": [],
+ "top_analysts_extra": [],
+ "sec_user_agent": "GEXWalls/1.0 (personal research; you@example.com)"
+}

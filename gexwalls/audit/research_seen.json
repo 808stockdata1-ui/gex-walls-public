@@ -1,0 +1,603 @@
+[
+ {
+  "date": "2026-11-02",
+  "name": "matrix-gex PR #67 (open-source GEX survey + fixes)",
+  "url": "https://github.com/danielbul1/matrix-gex/pull/67",
+  "verdict": "adopt-methods",
+  "note": "fix 1 done (BS gamma at spot); flip nearest spot, sign-convention robustness, parity carry pending"
+ },
+ {
+  "date": "2026-11-02",
+  "name": "edgartools",
+  "url": "https://edgartools.readthedocs.io/",
+  "verdict": "adopt",
+  "note": "SEC 13F/Form 4/13D locally; security review before install"
+ },
+ {
+  "date": "2026-11-02",
+  "name": "dominickkubica/options-scanner",
+  "url": "https://github.com/dominickkubica/options-scanner",
+  "verdict": "adopt-design",
+  "note": "log all candidates; 20+ independent clusters before trusting hit rates"
+ },
+ {
+  "date": "2026-11-02",
+  "name": "purgedcv",
+  "url": "https://pypi.org/project/purgedcv/",
+  "verdict": "adopt",
+  "note": "DSR/PBO for ranking changes"
+ },
+ {
+  "date": "2026-11-02",
+  "name": "flashalpha",
+  "url": "https://pypi.org/project/flashalpha/",
+  "verdict": "skip",
+  "note": "client for paid API; vanna/charm need paid tier"
+ },
+ {
+  "date": "2026-11-02",
+  "name": "OpenBB Platform",
+  "url": "https://pypi.org/project/OpenBB/",
+  "verdict": "watch",
+  "note": "free/local but heavy"
+ },
+ {
+  "date": "2026-11-03",
+  "name": "FINRA OTC Transparency (ATS weekly)",
+  "url": "https://www.finra.org/filing-reporting/otc-transparency",
+  "verdict": "watch",
+  "note": "free public weekly ATS/dark-pool volume per ticker; 2-4 wk delay"
+ },
+ {
+  "date": "2026-11-03",
+  "name": "edgartools 5.62.1",
+  "url": "https://pypi.org/project/edgartools/",
+  "verdict": "adopt",
+  "note": "recheck: MIT, pure-python wheel, released 2026-10-23; dep review before install"
+ },
+ {
+  "date": "2026-11-03",
+  "name": "Darthreign/gex-dashboard",
+  "url": "https://github.com/Darthreign/gex-dashboard",
+  "verdict": "watch",
+  "note": "MIT, CBOE delayed chain, no registration; zero-gamma via +/-8% spot-grid re-pricing - method to cross-check our flip"
+ },
+ {
+  "date": "2026-11-03",
+  "name": "gammagrid/gammagrid",
+  "url": "https://github.com/gammagrid/gammagrid",
+  "verdict": "skip",
+  "note": "AGPL-3.0, yfinance data (not primary); idea only: IV surface / per-expiry skew"
+ },
+ {
+  "date": "2026-11-04",
+  "name": "FINRA OTC Transparency File Download API v04",
+  "url": "https://www.finra.org/sites/default/files/OTC-Transparency-Data-File-Download-API-v04.pdf",
+  "verdict": "watch",
+  "note": "examples show no auth header but public access not stated; test one unauthenticated call first"
+ },
+ {
+  "date": "2026-11-04",
+  "name": "FullStackCraft/floe",
+  "url": "https://github.com/FullStackCraft/floe",
+  "verdict": "skip",
+  "note": "TS, dual license, broker-account data; idea: implied PDF from CBOE chain"
+ },
+ {
+  "date": "2026-11-05",
+  "name": "FINRA OTC weeklySummary API - unauthenticated test",
+  "url": "https://api.finra.org/data/group/otcMarket/name/weeklySummary",
+  "verdict": "adopt (already in app: finra_ats_weekly)",
+  "note": "POST without auth -> HTTP 200. Sorting needs EQUAL filters on weekStartDate + tierIdentifier (T1). Latest SPY week 2026-10-12, published 2026-11-02 (~3 wk lag)"
+ },
+ {
+  "date": "2026-11-05",
+  "name": "pikki622/gex-analytics",
+  "url": "https://github.com/pikki622/gex-analytics",
+  "verdict": "skip",
+  "note": "MIT, 2 stars, index options only via CBOE delayed; README suggests curl|sh uv installer; no vanna/charm"
+ },
+ {
+  "name": "tyrneh/options-implied-probability (oipd)",
+  "url": "https://github.com/tyrneh/options-implied-probability",
+  "date": "2026-11-06",
+  "verdict": "watch",
+  "why": "Apache-2.0, ~310 stars, last push 2026-02; risk-neutral price distribution + arbitrage-free smile fit could calibrate POP from the CBOE chain; pip package, default data via yfinance (would feed CBOE chain instead). Not installed; needs full security review of deps first."
+ },
+ {
+  "name": "FlashAlpha-lab/gex-explained",
+  "url": "https://github.com/FlashAlpha-lab/gex-explained",
+  "date": "2026-11-06",
+  "verdict": "skip",
+  "why": "MIT, 12 stars, vendor tutorial; live examples need paid FlashAlpha key; app already computes GEX/vanna/charm/flip."
+ },
+ {
+  "date": "2026-11-08",
+  "verdict": "skip",
+  "name": "amor71/FINRAShortData",
+  "note": "GPL-3.0, stale 2022"
+ },
+ {
+  "date": "2026-11-08",
+  "verdict": "skip",
+  "name": "samgozman/tightshorts",
+  "note": "archived"
+ },
+ {
+  "date": "2026-11-08",
+  "verdict": "skip",
+  "name": "form4api (PyPI)",
+  "note": "hosted API client, not primary"
+ },
+ {
+  "date": "2026-11-08",
+  "verdict": "skip",
+  "name": "insidertracker (PyPI)",
+  "note": "OpenInsider scraper, no license"
+ },
+ {
+  "name": "aakash-code/GammaGEX",
+  "url": "https://github.com/aakash-code/GammaGEX",
+  "date": "2026-11-09",
+  "verdict": "skip",
+  "why": "no license, 20 stars, last push 2025-11-18"
+ },
+ {
+  "name": "RobertHennings/FINRA_CLIENT",
+  "url": "https://github.com/RobertHennings/FINRA_CLIENT",
+  "date": "2026-11-09",
+  "verdict": "skip",
+  "why": "no license, 1 star, last push 2025-04; needs FINRA API credentials"
+ },
+ {
+  "name": "Acelogic/Earnings-Volatility-Calculator",
+  "url": "https://github.com/Acelogic/Earnings-Volatility-Calculator",
+  "date": "2026-11-09",
+  "verdict": "skip (idea: watch)",
+  "why": "no license, 83 stars, last push 2026-03-21, yfinance-based; idea only: IV30/RV30 + term-structure slope filter before earnings, computable from CBOE chain + daily history"
+ },
+ {
+  "name": "aaguiar10/gflows",
+  "url": "https://github.com/aaguiar10/gflows",
+  "date": "2026-11-10",
+  "verdict": "watch",
+  "note": "MIT, 115 stars, last push 2025-10-02, 1 open issue; Dash app plotting delta/gamma/vanna/charm exposure from CBOE delayed quotes. App already has vanna/charm card; idea only: per-strike VEX/CEX bars. No install."
+ },
+ {
+  "name": "Matteo-Ferrara/gex-tracker",
+  "url": "https://github.com/Matteo-Ferrara/gex-tracker",
+  "date": "2026-11-10",
+  "verdict": "skip",
+  "note": "no license, last push 2023-04; GEX from CBOE JSON - already covered."
+ },
+ {
+  "name": "FINRA Reg SHO daily short sale volume (CNMSshvol)",
+  "url": "https://www.finra.org/finra-data/browse-catalog/short-sale-volume",
+  "date": "2026-11-10",
+  "verdict": "adopt (already in app)",
+  "note": "public CDN file, no registration; walls_app already reads it (dark pool short %). 11-09 file verified."
+ },
+ {
+  "name": "FINRA consolidatedShortInterest API (otcMarket)",
+  "url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "date": "2026-11-11",
+  "verdict": "adopt",
+  "note": "Unauthenticated POST works (tested AAPL 2026-09-15..10-30). Bi-monthly short interest, prior, ADV, days to cover. Shipped 11a in Dark pool tab. Sorting needs a settlementDate EQUAL filter; use dateRangeFilters."
+ },
+ {
+  "name": "Pierre-Bouquet/pibou-filings (13F parser)",
+  "url": "https://github.com/Pierre-Bouquet/pibou-filings",
+  "date": "2026-11-11",
+  "verdict": "skip",
+  "note": "License NOASSERTION, 106 stars, last push 2026-07-31; app already builds 13F from SEC data sets + edgartools."
+ },
+ {
+  "name": "simonro/Edge-GEX-Lab",
+  "url": "https://github.com/simonro/Edge-GEX-Lab",
+  "verdict": "adopt-idea",
+  "date": "2026-11-12",
+  "note": "MIT, 66 stars, pushed 2026-11-09, created 2026-10-19, 5 open issues. setup.bat only pip/npm from registries, no remote scripts or binaries; needs Alpaca keys for stocks (registration) so not installed. Idea adopted: net GEX as share of 20-day dollar volume (12d)."
+ },
+ {
+  "name": "EazyDuz1t/EzOptions-Schwab",
+  "url": "https://github.com/EazyDuz1t/EzOptions-Schwab",
+  "verdict": "watch",
+  "date": "2026-11-12",
+  "note": "GPL-3.0, 45 stars, pushed 2026-10-11; single 905 KB python file, Schwab API GEX/DEX/vanna/charm dashboard. Overlaps app; GPL so ideas only. Not reviewed line by line."
+ },
+ {
+  "name": "zrack/gex-terminal",
+  "url": "https://github.com/zrack/gex-terminal",
+  "verdict": "watch",
+  "date": "2026-11-12",
+  "note": "MIT, 27 stars, pushed 2026-10-20; terminal UI for intraday GEX and replayable research. Ideas only (replay)."
+ },
+ {
+  "date": "2026-11-13",
+  "name": "Hewkaw02/Futures-Options-SD-Dashboard",
+  "url": "https://github.com/Hewkaw02/Futures-Options-SD-Dashboard",
+  "verdict": "skip",
+  "note": "MIT, 23 stars, pushed 2026-11-13; CME futures options (/GC /ES /NQ) via tastytrade/Databento/IBKR accounts (registration) + yfinance. Idea only: probability price touches call/put wall before expiry; overnight charm/hedging-flow forecast."
+ },
+ {
+  "date": "2026-11-13",
+  "name": "dokson/hedge-fund-tracker",
+  "url": "https://github.com/dokson/hedge-fund-tracker",
+  "verdict": "skip",
+  "note": "82 stars, pushed 2026-11-12, LicenseRef-Proprietary (all rights reserved). App already builds 13F/13D from SEC primary data."
+ },
+ {
+  "date": "2026-11-13",
+  "name": "dfdezdom/investdaytip",
+  "url": "https://github.com/dfdezdom/investdaytip",
+  "verdict": "skip",
+  "note": "MIT, 27 stars, long-term multi-factor stock scoring incl. 13F superinvestor consensus; install.sh/install.bat not reviewed; off-goal (long-term investing)."
+ },
+ {
+  "date": "2026-11-13",
+  "name": "gammagrid/gammagrid (recheck)",
+  "url": "https://github.com/gammagrid/gammagrid",
+  "verdict": "skip",
+  "note": "still AGPL-3.0, 100 stars, pushed 2026-11-13; yfinance data. Unchanged verdict."
+ },
+ {
+  "date": "2026-11-13",
+  "name": "FlashAlpha-lab/awesome-options-analytics",
+  "url": "https://github.com/FlashAlpha-lab/awesome-options-analytics",
+  "verdict": "watch",
+  "note": "curated list (vendor-run, NOASSERTION license), 50 stars, pushed 2026-11-06. Use as a lead list for future scouting; nothing adopted."
+ },
+ {
+  "date": "2026-11-13",
+  "name": "Shankar-Lakshminarayanan/OpenWhale; rogertan1977/finra-iex-dark-crusher",
+  "url": "https://github.com/rogertan1977/finra-iex-dark-crusher",
+  "verdict": "skip",
+  "note": "0 stars, days old; FINRA Reg SHO (already in app). Idea for later: IEX HIST (free, public, no registration) for off-exchange/midpoint prints - heavy pcap files, not tested."
+ },
+ {
+  "name": "dhawalc/spx-gamma-levels",
+  "date": "2026-11-14",
+  "verdict": "watch",
+  "url": "https://github.com/dhawalc/spx-gamma-levels",
+  "notes": "Daily SPX call/put wall, zero-gamma flip, vol trigger as CSV/JSON (data CC BY 4.0, 5 stars, created 2026-08, pushed daily). Vendor-run (SquawkFlow), not primary; GEX = gamma*OI*spot*100 (different scaling). Possible audit sanity cross-check of SPX walls only, never displayed as data."
+ },
+ {
+  "name": "zhuy9/GEX-lens",
+  "date": "2026-11-14",
+  "verdict": "skip",
+  "url": "https://github.com/zhuy9/GEX-lens",
+  "notes": "MIT, 1 star, React+FastAPI+DuckDB heatmap for SPY/QQQ/AAPL; nothing beyond app's walls/heatmap."
+ },
+ {
+  "name": "ShelbyLLL/GEX",
+  "date": "2026-11-14",
+  "verdict": "skip",
+  "url": "https://github.com/ShelbyLLL/GEX",
+  "notes": "MIT, 0 stars, 3 days old; needs LSEG (paid) data."
+ },
+ {
+  "name": "FINRA otcMarket blocksSummary API",
+  "date": "2026-11-14",
+  "verdict": "skip",
+  "url": "https://api.finra.org/data/group/otcMarket/name/blocksSummary",
+  "notes": "Free, unauthenticated, but monthly per-ATS-venue block aggregates (no per-symbol rows) - no per-ticker block-print signal."
+ },
+ {
+  "name": "QuantInsti Form 4 filing-date event study",
+  "date": "2026-11-14",
+  "verdict": "watch",
+  "url": "https://blog.quantinsti.com/sec-form-4-insider-trading-python-event-study/",
+  "notes": "Method idea for grading the app's insider cluster-buy rows by filing date (free EDGAR). App already lists OpenInsider cluster buys."
+ },
+ {
+  "name": "jfmz/gex-dashboard",
+  "url": "https://github.com/jfmz/gex-dashboard",
+  "date": "2026-11-15",
+  "verdict": "skip",
+  "note": "SPX/NDX walls + vol trigger from CBOE; no license, 0 stars, created this week - nothing the app lacks."
+ },
+ {
+  "name": "muciri0-oss/gex-calculator",
+  "url": "https://github.com/muciri0-oss/gex-calculator",
+  "date": "2026-11-15",
+  "verdict": "skip",
+  "note": "CBOE delayed GEX calculator; no license, 0 stars."
+ },
+ {
+  "name": "FlashAlpha-lab/options-gex-charts",
+  "url": "https://github.com/FlashAlpha-lab/options-gex-charts",
+  "date": "2026-11-15",
+  "verdict": "skip",
+  "note": "MIT JS chart of GEX levels on Lightweight Charts; built for the FlashAlpha API (signup) - vendor marketing."
+ },
+ {
+  "name": "MuntakimChowdhury23/AXON-GammaFlow-Terminal",
+  "url": "https://github.com/MuntakimChowdhury23/AXON-GammaFlow-Terminal",
+  "date": "2026-11-15",
+  "verdict": "skip",
+  "note": "No license; broker API + trading bot."
+ },
+ {
+  "name": "Scout 2026-11-14 malware lures (resp/rpocket/respocket repos)",
+  "url": "",
+  "date": "2026-11-15",
+  "verdict": "skip",
+  "note": "Never download; ~80 bought stars, external password zip, run-as-admin."
+ },
+ {
+  "name": "Avinash186200/short-interest-gap-strategy (random-pick control)",
+  "url": "https://github.com/Avinash186200/short-interest-gap-strategy",
+  "date": "2026-11-15",
+  "verdict": "watch",
+  "note": "Idea: grade the app's Picks vs random same-size draws from the same filtered pool. 1 commit, MIT."
+ },
+ {
+  "name": "FlashAlpha-lab/flashalpha-examples",
+  "url": "https://github.com/FlashAlpha-lab/flashalpha-examples",
+  "date": "2026-11-16",
+  "verdict": "skip",
+  "note": "MIT, 5 stars, pushed 2026-11-07; examples for the FlashAlpha API (signup/key) - not usable without registration"
+ },
+ {
+  "name": "orthogonal.info Form 4 insider cluster detector (article)",
+  "url": "https://orthogonal.info/build-an-insider-trading-cluster-detector-with-python-and-free-sec-data/",
+  "date": "2026-11-16",
+  "verdict": "skip",
+  "note": "app already lists OpenInsider cluster buys + SEC Form 4 data; nothing new"
+ },
+ {
+  "name": "Apify Form 4 / dark-pool actors",
+  "url": "https://apify.com/",
+  "date": "2026-11-16",
+  "verdict": "skip",
+  "note": "paid/registered platform"
+ },
+ {
+  "name": "quantclaw-data dark_pool module (glama.ai mirror)",
+  "url": "https://glama.ai/mcp/servers/@yoniassia/quantclaw-data",
+  "date": "2026-11-16",
+  "verdict": "skip",
+  "note": "GitHub repo returns 404 (gone); unverifiable source"
+ },
+ {
+  "name": "itsfabtrading/Gex-Multi",
+  "url": "https://github.com/itsfabtrading/Gex-Multi",
+  "date": "2026-11-17",
+  "verdict": "watch",
+  "note": "Apache-2.0, 8 stars, last push 2026-08-04, plain Python (cboe_data.py, gamma_exposure.py), public CBOE chains, no keys. Ideas: gross-gamma magnet level and options-implied 1-day range per ticker; versioned level method + SQLite history. App already has flip/walls/0DTE."
+ },
+ {
+  "name": "puneet-chandna/0DTE-dealer-gamma",
+  "url": "https://github.com/puneet-chandna/0DTE-dealer-gamma",
+  "date": "2026-11-17",
+  "verdict": "skip",
+  "note": "No clear license (NOASSERTION), 11 stars; SPX 0DTE zero-gamma dashboard - app already computes flip incl. 0DTE."
+ },
+ {
+  "name": "hs902/oxford-ledge-edgar (PyPI ledge-edgar 0.1.0)",
+  "url": "https://github.com/hs902/oxford-ledge-edgar",
+  "date": "2026-11-17",
+  "verdict": "skip",
+  "note": "MIT, stdlib-only Form 4 / 13F parsers, 0 stars, last push 2026-07-10, package name inconsistent (ledge-edgar vs oxfordledge-edgar). App already parses 13F data sets + Form 4; edgartools is the maintained choice."
+ },
+ {
+  "name": "djellaldjouad/derivatives-toolkit",
+  "url": "https://github.com/djellaldjouad/derivatives-toolkit",
+  "date": "2026-11-17",
+  "verdict": "skip",
+  "note": "Teaching notebooks (BS greeks, GEX aggregation, vanna-volga), CBOE/Yahoo/H.15 data; GitHub license NOASSERTION though blog says MIT; nothing beyond the app's dealer card."
+ },
+ {
+  "name": "LabinatorSolutions/awesome-institutional-trading",
+  "url": "https://github.com/LabinatorSolutions/awesome-institutional-trading",
+  "date": "2026-11-17",
+  "verdict": "watch",
+  "note": "CC-BY-4.0 curated list (order flow, microstructure, GEX), 42 stars, pushed 2026-09-24 - a source list for future research passes."
+ },
+ {
+  "name": "tapeboard.com dark pool tracker",
+  "url": "https://tapeboard.com/dark-pool-tracker",
+  "date": "2026-11-17",
+  "verdict": "skip",
+  "note": "Re-publishes FINRA weekly ATS data (aggregator); app reads FINRA directly."
+ },
+ {
+  "name": "FalsifyLab/falsifylab-alpha-mcp (insider_buy_clusters)",
+  "date": "2026-11-18",
+  "verdict": "skip",
+  "url": "https://github.com/FalsifyLab/falsifylab-alpha-mcp",
+  "note": "MIT, 1 star, last push 2026-06-12; freemium MCP (Pro tier for history/backtests). App already lists cluster buys (OpenInsider) - nothing new."
+ },
+ {
+  "name": "SEC Insider Transactions Data Sets (Form 3/4/5)",
+  "date": "2026-11-18",
+  "verdict": "watch",
+  "url": "https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets",
+  "note": "Primary source, free, no registration; quarterly so lags. Candidate to replace/verify the OpenInsider aggregator for a back-test of cluster buys (Cohen-Malloy-Pomorski idea); daily feed stays EDGAR/edgartools."
+ },
+ {
+  "name": "cbfin (PyPI)",
+  "date": "2026-11-18",
+  "verdict": "skip",
+  "url": "https://pypi.org/project/cbfin/",
+  "note": "Appeared in a CBOE-options search; PyPI JSON API returns 404 (not found) - nothing to review."
+ },
+ {
+  "name": "hawkberry/finra-py",
+  "url": "https://github.com/hawkberry/finra-py",
+  "date": "2026-11-19",
+  "verdict": "watch",
+  "why": "MIT, PyPI 1.3.1 (2026-10-20), pushed 2026-11-10, 1 star; unofficial client for the FINRA API platform. App already calls the public api.finra.org endpoints directly (short interest, blocks, ATS) - no need to add a dependency; watch for maturity."
+ },
+ {
+  "name": "phammings/spx500-gamma-exposure-calculator",
+  "url": "https://github.com/phammings/spx500-gamma-exposure-calculator",
+  "date": "2026-11-19",
+  "verdict": "skip",
+  "why": "no license, 43 stars, last push 2024-11-11; SPX GEX calc the app already does (BS gamma at spot, flip, vanna/charm)."
+ },
+ {
+  "name": "khalid-naami/StrikeVision-master",
+  "url": "https://github.com/khalid-naami/StrikeVision-master",
+  "date": "2026-11-19",
+  "verdict": "skip",
+  "note": "MIT, 1 star, pushed 2026-11-19; Streamlit + Yahoo chains (not CBOE). Idea only: delta-adjusted OI walls (DAOI)."
+ },
+ {
+  "name": "SkylitAI/skylit-mcp",
+  "url": "https://github.com/SkylitAI/skylit-mcp",
+  "date": "2026-11-19",
+  "verdict": "skip",
+  "note": "MIT client for Skylit's hosted API (account/key needed) - not free public data."
+ },
+ {
+  "name": "silverlion2/my-trading-app",
+  "url": "https://github.com/silverlion2/my-trading-app",
+  "date": "2026-11-19",
+  "verdict": "skip",
+  "note": "no license, 5 stars; GEX/max-pain dashboard duplicating the app."
+ },
+ {
+  "name": "Edgar13F (PyPI)",
+  "url": "https://pypi.org/project/Edgar13F/",
+  "date": "2026-11-19",
+  "verdict": "skip",
+  "note": "v0.2.0 2023-08-26, no license, unmaintained; app already parses SEC 13F data sets."
+ },
+ {
+  "name": "Massive (ex-Polygon) dark pool scanner blog",
+  "url": "https://massive.com/blog/dark-pool-scanner-with-massive",
+  "date": "2026-11-19",
+  "verdict": "skip",
+  "note": "needs a Massive API key (registration)."
+ },
+ {
+  "name": "misterglobal/odte",
+  "url": "https://github.com/misterglobal/odte",
+  "date": "2026-11-21",
+  "verdict": "skip",
+  "note": "no license, 0 stars, last push 2026-02 (TypeScript 0DTE tool)"
+ },
+ {
+  "name": "VannaCharm (option-screener)",
+  "url": "https://medium.com/option-screener/introducing-vannacharm-dealer-gamma-vanna-and-charm-exposure-analysis-f2f703d2de59",
+  "date": "2026-11-21",
+  "verdict": "skip",
+  "note": "hosted product; app already has vanna/charm in the dealer card"
+ },
+ {
+  "name": "Options Analysis Suite vanna/charm/vomma exposure",
+  "url": "https://www.optionsanalysissuite.com/documentation/vanna-charm-vomma-exposure",
+  "date": "2026-11-21",
+  "verdict": "watch",
+  "note": "idea only: vomma exposure (vol-of-vol hedging) as a dealer-card line; hosted data not used"
+ },
+ {
+  "name": "Apify SEC Form 4 cluster-buy actors",
+  "url": "https://apify.com/cybermax/sec-insider-tracker.md",
+  "date": "2026-11-21",
+  "verdict": "skip",
+  "note": "hosted, needs account; SEC EDGAR Form 4 is the primary source already used"
+ },
+ {
+  "name": "ejcacciatore/ATS-Charts",
+  "url": "https://github.com/ejcacciatore/ATS-Charts",
+  "date": "2026-11-22",
+  "verdict": "skip",
+  "why": "no license, 0 stars, last push 2025-12; HTML charts of FINRA ATS data the app already reads"
+ },
+ {
+  "name": "dodox/smaug (git.dominik-roth.eu)",
+  "url": "https://git.dominik-roth.eu/dodox/smaug",
+  "date": "2026-11-22",
+  "verdict": "skip",
+  "why": "no license, 0 stars; Form 4 cluster alerts via Slack + optional Alpaca auto-trading (never)"
+ },
+ {
+  "name": "Cboe BIDS Trading monthly block stats",
+  "url": "https://www.cboe.com/insights/posts/bids-trading-may-2026",
+  "date": "2026-11-22",
+  "verdict": "watch",
+  "why": "primary block-ATS market-level stats (monthly blog); no per-ticker feed - context only"
+ },
+ {
+  "name": "vilkovgr/qmoms",
+  "url": "https://github.com/vilkovgr/qmoms",
+  "date": "2026-11-23",
+  "verdict": "watch",
+  "why": "model-free implied moments (variance, skew) from option surfaces; 31 stars, pushed 2026-10-20; license NOASSERTION - method idea for a skew tile only, no code reuse until licence is clear"
+ },
+ {
+  "name": "dbrojas/optlib",
+  "url": "https://github.com/dbrojas/optlib",
+  "date": "2026-11-23",
+  "verdict": "skip",
+  "why": "MIT, 1.6k stars but idle since 2022-11; app already prices with Black-Scholes/Black-76"
+ },
+ {
+  "name": "sareegpt/edgartools-mcp",
+  "url": "https://github.com/sareegpt/edgartools-mcp",
+  "date": "2026-11-23",
+  "verdict": "skip",
+  "why": "MIT MCP wrapper of edgartools, idle since 2026-02; app already uses edgartools directly"
+ },
+ {
+  "name": "Apify dark-pool-pulse / pineify dark pool scanner",
+  "url": "https://apify.com/0xgollum/dark-pool-pulse",
+  "date": "2026-11-23",
+  "verdict": "skip",
+  "why": "hosted actors/sites needing accounts; data is FINRA ATS/RegSHO the app already reads first-hand"
+ },
+ {
+  "url": "https://github.com/vollib/py_vollib",
+  "date": "2026-11-24",
+  "verdict": "watch",
+  "why": "MIT, pushed 2026-05-29, 448 stars, 2 open issues; pure-Python BS/Black-76 IV + greeks (Jaeckel 'Let's Be Rational'). Only worth it if the app's own mid-price IV inversion misbehaves on thin LEAPS; app already has Black-76. Not installed."
+ },
+ {
+  "url": "https://github.com/vollib/vollib",
+  "date": "2026-11-24",
+  "verdict": "skip",
+  "why": "MIT, SWIG/C build, last push 2023-06; py_vollib is the maintained pure-Python sibling."
+ },
+ {
+  "url": "https://github.com/sitmo/volkit",
+  "date": "2026-11-24",
+  "verdict": "skip",
+  "why": "BSD-3, 0 stars, pushed 2025-09 - too little use/review to trust."
+ },
+ {
+  "url": "https://apify.com/sutraflow/sec-insider-trading-signals",
+  "date": "2026-11-24",
+  "verdict": "skip",
+  "why": "Apify Form 4 cluster-buy actors (several): account-gated resellers of SEC EDGAR data the app already reads."
+ },
+ {
+  "name": "unicodeveloper/openwhales",
+  "url": "https://github.com/unicodeveloper/openwhales",
+  "date": "2026-11-24",
+  "verdict": "skip",
+  "why": "no license, 11 stars, last push 2026-04; AI/LLM SEC-filings app (TypeScript) - app already has 13F/13D/Form 4 from SEC directly"
+ },
+ {
+  "name": "fullstackcraft/floe-go",
+  "url": "https://github.com/fullstackcraft/floe-go",
+  "date": "2026-11-24",
+  "verdict": "skip",
+  "why": "no license, 3 stars, Go; Greeks/IV surface already in app"
+ },
+ {
+  "name": "sHyanorn/backtest-lab",
+  "url": "https://github.com/sHyanorn/backtest-lab",
+  "date": "2026-11-24",
+  "verdict": "watch",
+  "why": "MIT (per scout 11-21); MinTRL/MinBTL formulas could tell how many graded picks a group needs before calibration is trusted; reference only, 1 star, setup not reviewed"
+ },
+ {
+  "name": "HKUDS/Vibe-Trading",
+  "url": "https://github.com/HKUDS/Vibe-Trading",
+  "date": "2026-11-24",
+  "verdict": "skip",
+  "why": "LLM multi-agent trading layer, 3 security advisories (scout 11-21); no options POP value"
+ }
+]
